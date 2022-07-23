@@ -1,0 +1,299 @@
+html,
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif !important
+
+}
+
+#hero {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    z-index: 2;
+    background: #F44336;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    padding: 125px 0;
+}
+
+video {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+#headline {
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    line-height: 1;
+    text-transform: capitalize;
+}
+
+.cta-hero {
+    padding: 10px 20px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border: 0;
+    border-radius: 5px;
+    background: #424242;
+    text-transform: capitalize;
+}
+
+.cta-hero:hover {
+    background: #212121;
+}
+
+#subheading {
+    font-size: 20px;
+    color: white;
+}
+#faq {
+    padding: 75px 0;
+    background: #FAFAFA;
+}
+#donations {
+    padding: 75px 0;
+    background: #424242;
+}
+
+.btn-faq {
+    padding: 10px 20px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border: 0;
+    border-radius: 5px;
+    background: #424242;
+    text-decoration: none;
+    display: block;
+}
+
+.btn-faq:hover {
+    text-decoration: none;
+    color: white;
+    background: #212121;
+}
+
+.support-org {
+
+}
+
+.support-org .logo {
+    height: 100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.support-org .name {
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.support-org .description {
+    color: white;
+    font-size: 16px;
+    min-height: 115px;
+}
+
+.support-org .donate {
+    padding: 10px 20px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border: 0;
+    border-radius: 5px;
+    background: #F44336;
+    width: 100%;
+}
+
+.support-org .donate:hover {
+    background: #D32F2F;
+}
+
+.faq-title {
+    color: #212121;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.faq-answer {
+    line-height: 1.8em;
+}
+
+#california {
+   background: #FAFAFA;
+   padding: 100px;
+}
+
+#california img {
+    width: 100%;
+}
+
+.section-heading {
+    font-size: 24px;
+    font-weight: bold;
+}
+.section-subheading {
+    font-size: 16px;
+    line-height: 1.8em;
+}
+
+.warning-message {
+    padding: 75px;
+    background: #212121
+}
+
+.warning-message .heading {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.warning-message .section-heading {
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.warning-message .section-subheading {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+.fa-circle-exclamation {
+    color: #F44336;
+}
+
+/* Modals */
+
+.modal-footer {
+    text-align: center;
+    display: block !important;
+}
+.modal-footer p {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: block;
+    letter-spacing: 1px;
+    color: black;
+}
+.modal-footer a {
+display: inline-block;
+}
+.modal-footer img {
+    height: 75px;
+    display: block;
+    margin: 0 auto;
+}
+
+.modal-wizard {
+    border-bottom: 1px solid #dee2e6;
+    position: relative;
+}
+
+.modal-nav {
+    border-top: 1px solid #dee2e6;
+    padding: 16px;
+}
+
+.modal-nav button {
+ border: 0;
+ border-radius: 5px;
+ color: white;
+ text-transform: capitalize;
+ padding: 10px;
+}
+
+.modal-nav .gs-btn-secondary {
+    background: #424242;
+}
+.modal-nav .gs-btn-secondary:hover {
+    background: #212121;
+}
+.modal-nav .gs-btn-primary {
+    background: #F44336;
+}
+.modal-nav .gs-btn-primary:hover {
+    background: #D32F2F;
+}
+
+.success-message a {
+    color: #F44336;
+}
+
+.success-message a:hover {
+    background: #D32F2F;
+}
+
+/* Wizard */
+
+.step-title {
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.line-status-1-of-3 {
+    position: absolute;
+    width: 100%;
+    top: 41px;
+    left: 0;
+    background: white;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 15%, #cccccc 16%, #cccccc 84%, rgba(255, 255, 255, 0) 85%);
+    height: 2px;
+}
+
+.line-status-2-of-3 {
+    position: absolute;
+    width: 100%;
+    top: 41px;
+    left: 0;
+    background: white;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 15%, black 16%, black 52%, #cccccc 53%, #cccccc 83%, rgba(255, 255, 255, 0) 85%);
+    height: 2px;
+}
+
+.line-status-3-of-3 {
+    position: absolute;
+    width: 100%;
+    top: 41px;
+    left: 0;
+    background: white;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 15%, black 16%, black 84%, rgba(255, 255, 255, 0) 85%);
+    height: 2px;
+}
+
+.active-step {
+    color: black;
+}
+
+.inactive-step {
+    color: #ccc;
+}
