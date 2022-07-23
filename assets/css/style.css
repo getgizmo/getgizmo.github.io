@@ -17,7 +17,7 @@ body {
 .hero-overlay {
     position: absolute;
     z-index: 2;
-    background: #F44336;
+    background: #212121;
     width: 100%;
     height: 100%;
     opacity: 0.8;
@@ -53,12 +53,12 @@ video {
     text-align: center;
     border: 0;
     border-radius: 5px;
-    background: #424242;
+    background: #F44336;
     text-transform: capitalize;
 }
 
 .cta-hero:hover {
-    background: #212121;
+    background: #D32F2F;
 }
 
 #subheading {
