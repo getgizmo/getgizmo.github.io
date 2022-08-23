@@ -1,0 +1,438 @@
+html,
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif !important;
+}
+
+p {
+  color: black;
+}
+
+#header {
+  //position: fixed;
+  display: none;
+  width: 100%;
+  padding: 15px 0;
+  background: rgba(0, 0, 0, 0.1);
+
+  .container-fluid {
+    padding: 0 50px !important;
+  }
+}
+
+.cta-donate {
+  padding: 10px 20px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  border: 0;
+  border-radius: 5px;
+  background: #d32f2f;
+  text-decoration: none;
+  text-transform: capitalize;
+
+  &:hover {
+    color: white;
+    background: #c62828;
+  }
+}
+
+#menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  li {
+    display: inline-block;
+    margin-left: 40px;
+    a {
+      font-size: 20px;
+      text-transform: capitalize;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      &:hover {
+        color: #d32f2f;
+      }
+    }
+  }
+}
+
+#hero {
+  padding: 50px 0 0 0;
+}
+
+.quote {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.25;
+}
+
+.cta-hero {
+  padding: 15px 35px;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  border: 0;
+  border-radius: 5px;
+  background: #d32f2f;
+  text-decoration: none;
+  display: inline-block;
+
+  &:hover {
+    color: white;
+    background: #c62828;
+  }
+}
+
+#donations {
+  padding: 75px 0;
+  background: black;
+}
+
+.support-org .logo {
+  height: 75px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.support-org .name {
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.support-org .description {
+  color: white;
+  font-size: 16px;
+  min-height: 115px;
+}
+
+.support-org .donate {
+  padding: 10px 20px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  border: 0;
+  border-radius: 5px;
+  background: #d32f2f;
+  width: 100%;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.support-org .donate:hover {
+  background: #c62828;
+}
+
+.btn-cancel {
+  padding: 10px 20px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  border: 0;
+  border-radius: 5px;
+  background: #222;
+  text-decoration: none;
+  display: inline-block;
+
+  &:hover {
+    background: #000;
+  }
+}
+
+#subscribe,
+.btn-continue {
+  padding: 10px 20px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  border: 0;
+  border-radius: 5px;
+  background: #d32f2f;
+  text-decoration: none;
+  display: inline-block;
+
+  &:hover {
+    background: #c62828;
+  }
+}
+
+#subscribe {
+  padding: 14px 20px !important;
+  background: #222 !important;
+
+  &:hover {
+    background: #000 !important;
+  }
+}
+
+.payment-amount {
+  border-radius: 5px;
+  width: 100%;
+  padding: 17px 20px;
+  background: black;
+  color: white;
+  border: 0;
+  font-weight: bold;
+}
+
+.payment-amount-active {
+  background: #d32f2f !important;
+}
+
+:focus {
+  box-shadow: none !important;
+  border-color: #ced4da !important;
+}
+
+#newsletter {
+  padding: 100px 0;
+  background-color: #d32f2f;
+  // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%236a1717'/%3E%3Cstop offset='1' stop-color='%236a1717' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%236a1717'/%3E%3Cstop offset='1' stop-color='%236a1717' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23000000'/%3E%3Cstop offset='1' stop-color='%23000000' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23D32F2F'/%3E%3Cstop offset='1' stop-color='%23D32F2F' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23000000'/%3E%3Cstop offset='1' stop-color='%23000000' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23000000'/%3E%3Cstop offset='1' stop-color='%23000000' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+  // background-attachment: fixed;
+  // background-size: cover;
+
+  #mailchimp-message {
+    width: 380px;
+  }
+
+  small {
+    font-size: 1rem !important;
+    color: white;
+  }
+
+  .fa-circle-check {
+    color: #43a047;
+  }
+
+  .fa-circle-exclamation {
+    color: #f44336;
+  }
+
+  .container {
+    .title {
+      font-size: 6rem;
+      color: white;
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+    .description {
+      font-size: 2rem;
+      color: white;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+  }
+  input {
+    border: 0;
+    border-radius: 5px;
+    width: 400px;
+  }
+}
+
+.info {
+  padding: 75px 0;
+
+  .fa-circle {
+    color: black;
+  }
+
+  .title {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-bottom: 35px;
+  }
+  .description {
+    margin-bottom: 35px;
+  }
+
+  .content {
+    width: 550px;
+  }
+
+  .plus-minus {
+    cursor: pointer;
+  }
+  .fa-circle-minus {
+    color: black;
+  }
+  .topic {
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+    line-height: 1.25;
+    color: black;
+  }
+}
+
+.fa-circle-plus {
+  color: #e53935;
+}
+
+.topic-container {
+  margin-bottom: 30px;
+}
+
+#footer {
+  background: black;
+  padding: 75px 25px;
+
+  .title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  .campaign-title {
+    font-size: 5rem;
+    color: white;
+    font-weight: bold;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  i {
+    color: white;
+  }
+
+  .email-link {
+    color: white;
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 1399.98px) {
+  .quote {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .quote {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .support-org .name {
+    font-size: 19px;
+  }
+  .support-org .description {
+    min-height: 135px;
+  }
+
+  .cta-hero {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #donations {
+    padding: 75px 25px;
+
+    .support-org .donate {
+      width: auto;
+    }
+
+    .description {
+      min-height: initial;
+    }
+  }
+  .container .row div:nth-child(-n + 2) .support-org {
+    margin-bottom: 75px;
+  }
+
+  #newsletter {
+    .container {
+      .title {
+        font-size: 5rem;
+      }
+      .description {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  #footer {
+    .campaign-title {
+      font-size: 4rem;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  #hero {
+    padding: 35px 0 0 0;
+  }
+
+  .quote {
+    font-size: 1.8rem;
+  }
+
+  .cta-hero {
+    padding: 10px 20px;
+    font-size: 1.25rem;
+  }
+
+  .info {
+    padding: 75px 35px;
+
+    .content {
+      width: 100%;
+    }
+
+    .topic {
+      font-size: 1.5rem;
+    }
+  }
+
+  #donations {
+    .support-org .donate {
+      width: 100%;
+    }
+  }
+
+  #header .container-fluid {
+    padding: 0 25px !important;
+  }
+
+  #newsletter {
+    padding: 75px 0;
+
+    #mailchimp-message {
+      width: 230px;
+    }
+
+    .container {
+      .title {
+        font-size: 3.5rem;
+      }
+
+      .description {
+        margin-bottom: 25px;
+      }
+
+      #mce-EMAIL {
+        width: auto;
+      }
+    }
+  }
+
+  #footer {
+    .campaign-title {
+      font-size: 3.5rem;
+      margin-top: 35px;
+    }
+  }
+}

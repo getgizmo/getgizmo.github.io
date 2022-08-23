@@ -1,299 +1,379 @@
 html,
 body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif !important
+  margin: 0;
+  font-family: "Roboto", sans-serif !important;
+}
 
+p {
+  color: black;
+}
+
+#header {
+  display: none;
+  width: 100%;
+  padding: 15px 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+#header .container-fluid {
+  padding: 0 50px !important;
+}
+
+.cta-donate {
+  padding: 10px 20px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  border: 0;
+  border-radius: 5px;
+  background: #d32f2f;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.cta-donate:hover {
+  color: white;
+  background: #c62828;
+}
+
+#menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+#menu li {
+  display: inline-block;
+  margin-left: 40px;
+}
+#menu li a {
+  font-size: 20px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+#menu li a:hover {
+  color: #d32f2f;
 }
 
 #hero {
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  padding: 50px 0 0 0;
 }
 
-.hero-overlay {
-    position: absolute;
-    z-index: 2;
-    background: #212121;
-    width: 100%;
-    height: 100%;
-    opacity: 0.8;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 3;
-    padding: 125px 0;
-}
-
-video {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-#headline {
-    font-size: 60px;
-    font-weight: bold;
-    color: white;
-    line-height: 1;
-    text-transform: capitalize;
+.quote {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.25;
 }
 
 .cta-hero {
-    padding: 10px 20px;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    border: 0;
-    border-radius: 5px;
-    background: #F44336;
-    text-transform: capitalize;
+  padding: 15px 35px;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  border: 0;
+  border-radius: 5px;
+  background: #d32f2f;
+  text-decoration: none;
+  display: inline-block;
 }
-
 .cta-hero:hover {
-    background: #D32F2F;
+  color: white;
+  background: #c62828;
 }
 
-#subheading {
-    font-size: 20px;
-    color: white;
-}
-#faq {
-    padding: 75px 0;
-    background: #FAFAFA;
-}
 #donations {
-    padding: 75px 0;
-    background: #424242;
-}
-
-.btn-faq {
-    padding: 10px 20px;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    border: 0;
-    border-radius: 5px;
-    background: #424242;
-    text-decoration: none;
-    display: block;
-}
-
-.btn-faq:hover {
-    text-decoration: none;
-    color: white;
-    background: #212121;
-}
-
-.support-org {
-
+  padding: 75px 0;
+  background: black;
 }
 
 .support-org .logo {
-    height: 100px;
-    margin: 0 auto;
-    text-align: center;
+  height: 75px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .support-org .name {
-    font-weight: bold;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .support-org .description {
-    color: white;
-    font-size: 16px;
-    min-height: 115px;
+  color: white;
+  font-size: 16px;
+  min-height: 115px;
 }
 
 .support-org .donate {
-    padding: 10px 20px;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    border: 0;
-    border-radius: 5px;
-    background: #F44336;
-    width: 100%;
+  padding: 10px 20px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  border: 0;
+  border-radius: 5px;
+  background: #d32f2f;
+  width: 100%;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .support-org .donate:hover {
-    background: #D32F2F;
+  background: #c62828;
 }
 
-.faq-title {
-    color: #212121;
+.btn-cancel {
+  padding: 10px 20px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  border: 0;
+  border-radius: 5px;
+  background: #222;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-cancel:hover {
+  background: #000;
+}
+
+#subscribe,
+.btn-continue {
+  padding: 10px 20px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  border: 0;
+  border-radius: 5px;
+  background: #d32f2f;
+  text-decoration: none;
+  display: inline-block;
+}
+#subscribe:hover,
+.btn-continue:hover {
+  background: #c62828;
+}
+
+#subscribe {
+  padding: 14px 20px !important;
+  background: #222 !important;
+}
+#subscribe:hover {
+  background: #000 !important;
+}
+
+.payment-amount {
+  border-radius: 5px;
+  width: 100%;
+  padding: 17px 20px;
+  background: black;
+  color: white;
+  border: 0;
+  font-weight: bold;
+}
+
+.payment-amount-active {
+  background: #d32f2f !important;
+}
+
+:focus {
+  box-shadow: none !important;
+  border-color: #ced4da !important;
+}
+
+#newsletter {
+  padding: 100px 0;
+  background-color: #d32f2f;
+}
+#newsletter #mailchimp-message {
+  width: 380px;
+}
+#newsletter small {
+  font-size: 1rem !important;
+  color: white;
+}
+#newsletter .fa-circle-check {
+  color: #43a047;
+}
+#newsletter .fa-circle-exclamation {
+  color: #f44336;
+}
+#newsletter .container .title {
+  font-size: 6rem;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+}
+#newsletter .container .description {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+#newsletter input {
+  border: 0;
+  border-radius: 5px;
+  width: 400px;
+}
+
+.info {
+  padding: 75px 0;
+}
+.info .fa-circle {
+  color: black;
+}
+.info .title {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.1;
+  margin-bottom: 35px;
+}
+.info .description {
+  margin-bottom: 35px;
+}
+.info .content {
+  width: 550px;
+}
+.info .plus-minus {
+  cursor: pointer;
+}
+.info .fa-circle-minus {
+  color: black;
+}
+.info .topic {
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+  line-height: 1.25;
+  color: black;
+}
+
+.fa-circle-plus {
+  color: #e53935;
+}
+
+.topic-container {
+  margin-bottom: 30px;
+}
+
+#footer {
+  background: black;
+  padding: 75px 25px;
+}
+#footer .title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+#footer .campaign-title {
+  font-size: 5rem;
+  color: white;
+  font-weight: bold;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+#footer a {
+  text-decoration: none;
+}
+#footer i {
+  color: white;
+}
+#footer .email-link {
+  color: white;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 1399.98px) {
+  .quote {
+    font-size: 35px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .quote {
     font-size: 40px;
-    font-weight: bold;
     text-align: center;
-    text-transform: uppercase;
+  }
+  .support-org .name {
+    font-size: 19px;
+  }
+  .support-org .description {
+    min-height: 135px;
+  }
+  .cta-hero {
+    margin-bottom: 50px;
+  }
 }
-
-.faq-answer {
-    line-height: 1.8em;
+@media (max-width: 991.98px) {
+  #donations {
+    padding: 75px 25px;
+  }
+  #donations .support-org .donate {
+    width: auto;
+  }
+  #donations .description {
+    min-height: initial;
+  }
+  .container .row div:nth-child(-n+2) .support-org {
+    margin-bottom: 75px;
+  }
+  #newsletter .container .title {
+    font-size: 5rem;
+  }
+  #newsletter .container .description {
+    font-size: 1.6rem;
+  }
+  #footer .campaign-title {
+    font-size: 4rem;
+  }
 }
-
-#california {
-   background: #FAFAFA;
-   padding: 100px;
-}
-
-#california img {
+@media (max-width: 767.98px) {
+  #hero {
+    padding: 35px 0 0 0;
+  }
+  .quote {
+    font-size: 1.8rem;
+  }
+  .cta-hero {
+    padding: 10px 20px;
+    font-size: 1.25rem;
+  }
+  .info {
+    padding: 75px 35px;
+  }
+  .info .content {
     width: 100%;
-}
-
-.section-heading {
-    font-size: 24px;
-    font-weight: bold;
-}
-.section-subheading {
-    font-size: 16px;
-    line-height: 1.8em;
-}
-
-.warning-message {
-    padding: 75px;
-    background: #212121
-}
-
-.warning-message .heading {
-    color: white;
-    text-align: center;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.warning-message .section-heading {
-    font-weight: bold;
-    color: white;
-    font-size: 30px;
-    text-align: center;
-}
-
-.warning-message .section-subheading {
-    color: white;
-    text-align: center;
-    font-size: 18px;
-}
-
-.fa-circle-exclamation {
-    color: #F44336;
-}
-
-/* Modals */
-
-.modal-footer {
-    text-align: center;
-    display: block !important;
-}
-.modal-footer p {
-    font-size: 12px;
-    font-weight: 400;
-    text-transform: uppercase;
-    display: block;
-    letter-spacing: 1px;
-    color: black;
-}
-.modal-footer a {
-display: inline-block;
-}
-.modal-footer img {
-    height: 75px;
-    display: block;
-    margin: 0 auto;
-}
-
-.modal-wizard {
-    border-bottom: 1px solid #dee2e6;
-    position: relative;
-}
-
-.modal-nav {
-    border-top: 1px solid #dee2e6;
-    padding: 16px;
-}
-
-.modal-nav button {
- border: 0;
- border-radius: 5px;
- color: white;
- text-transform: capitalize;
- padding: 10px;
-}
-
-.modal-nav .gs-btn-secondary {
-    background: #424242;
-}
-.modal-nav .gs-btn-secondary:hover {
-    background: #212121;
-}
-.modal-nav .gs-btn-primary {
-    background: #F44336;
-}
-.modal-nav .gs-btn-primary:hover {
-    background: #D32F2F;
-}
-
-.success-message a {
-    color: #F44336;
-}
-
-.success-message a:hover {
-    background: #D32F2F;
-}
-
-/* Wizard */
-
-.step-title {
-    font-weight: 500;
-    font-size: 12px;
-    text-transform: capitalize;
-}
-
-.line-status-1-of-3 {
-    position: absolute;
+  }
+  .info .topic {
+    font-size: 1.5rem;
+  }
+  #donations .support-org .donate {
     width: 100%;
-    top: 41px;
-    left: 0;
-    background: white;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 15%, #cccccc 16%, #cccccc 84%, rgba(255, 255, 255, 0) 85%);
-    height: 2px;
-}
-
-.line-status-2-of-3 {
-    position: absolute;
-    width: 100%;
-    top: 41px;
-    left: 0;
-    background: white;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 15%, black 16%, black 52%, #cccccc 53%, #cccccc 83%, rgba(255, 255, 255, 0) 85%);
-    height: 2px;
-}
-
-.line-status-3-of-3 {
-    position: absolute;
-    width: 100%;
-    top: 41px;
-    left: 0;
-    background: white;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 15%, black 16%, black 84%, rgba(255, 255, 255, 0) 85%);
-    height: 2px;
-}
-
-.active-step {
-    color: black;
-}
-
-.inactive-step {
-    color: #ccc;
-}
+  }
+  #header .container-fluid {
+    padding: 0 25px !important;
+  }
+  #newsletter {
+    padding: 75px 0;
+  }
+  #newsletter #mailchimp-message {
+    width: 230px;
+  }
+  #newsletter .container .title {
+    font-size: 3.5rem;
+  }
+  #newsletter .container .description {
+    margin-bottom: 25px;
+  }
+  #newsletter .container #mce-EMAIL {
+    width: auto;
+  }
+  #footer .campaign-title {
+    font-size: 3.5rem;
+    margin-top: 35px;
+  }
+}/*# sourceMappingURL=style.css.map */
