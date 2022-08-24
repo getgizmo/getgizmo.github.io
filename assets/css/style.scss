@@ -195,8 +195,8 @@ p {
   // background-attachment: fixed;
   // background-size: cover;
 
-  #mailchimp-message {
-    width: 380px;
+  #mce-EMAIL {
+    width: 100%;
   }
 
   small {
@@ -226,6 +226,7 @@ p {
       font-weight: bold;
       text-transform: uppercase;
       margin-bottom: 25px;
+      line-height: 1;
     }
   }
   input {
@@ -410,10 +411,6 @@ p {
   #newsletter {
     padding: 75px 0;
 
-    #mailchimp-message {
-      width: 230px;
-    }
-
     .container {
       .title {
         font-size: 3.5rem;
@@ -423,8 +420,8 @@ p {
         margin-bottom: 25px;
       }
 
-      #mce-EMAIL {
-        width: auto;
+      #subscribe {
+        width: 100%;
       }
     }
   }

@@ -186,8 +186,8 @@ p {
   padding: 100px 0;
   background-color: #d32f2f;
 }
-#newsletter #mailchimp-message {
-  width: 380px;
+#newsletter #mce-EMAIL {
+  width: 100%;
 }
 #newsletter small {
   font-size: 1rem !important;
@@ -212,6 +212,7 @@ p {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 25px;
+  line-height: 1;
 }
 #newsletter input {
   border: 0;
@@ -360,17 +361,14 @@ p {
   #newsletter {
     padding: 75px 0;
   }
-  #newsletter #mailchimp-message {
-    width: 230px;
-  }
   #newsletter .container .title {
     font-size: 3.5rem;
   }
   #newsletter .container .description {
     margin-bottom: 25px;
   }
-  #newsletter .container #mce-EMAIL {
-    width: auto;
+  #newsletter .container #subscribe {
+    width: 100%;
   }
   #footer .campaign-title {
     font-size: 3.5rem;
