@@ -1,108 +1,135 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Litigation landing page</title>
-    <meta name="description" content="description" />
-    <meta name="author" content="author" />
-    <meta name="keywords" content="keywords" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="/assets/js/jquery-3.6.0.min.js"></script>
-    <script src="/assets/js/california-litigation.js"></script>
-  </head>
-  <body>
-    <div id="header">
-      <div class="container-fluid">
-        <div class="d-flex justify-content-between align-items-center">
-          <a href="#" class="cta-donate">donate</a>
-          <ul id="menu">
-            <li>
-              <a href="#">FAQ</a>
-            </li>
-            <li>
-              <a href="#">info</a>
-            </li>
-            <li>
-              <a href="#">contact</a>
-            </li>
-          </ul>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Litigation landing page</title>
+  <meta name="description" content="description" />
+  <meta name="author" content="author" />
+  <meta name="keywords" content="keywords" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="/assets/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/js/jquery-3.6.0.min.js"></script>
+  <script src="/assets/js/california-litigation.js"></script>
+</head>
+
+<body>
+  <div id="header">
+
+
+    <div class="container-fluid">
+
+      <div class="d-md-none container-fluid mobile-nav">
+        <div class="d-flex justify-content-between align-items-center nav-container">
+          <a href="#" class="cta">donate</a>
+          <a href="#" class="nav-item"><i class="fa-solid fa-circle-info"></i> About</a>
+          <a href="#" class="nav-item"><i class="fa-solid fa-file-lines"></i> Read the Complaint</a>
+          <a href="#" class="nav-item"><i class="fa-solid fa-brush"></i> Tar and Feather</a>
         </div>
       </div>
-    </div>
-    <div id="hero">
-      <div class="container-xl px-4 px-xl-0">
-        <div class="row">
-          <div class="col-xxl-5 col-xl-5 col-lg-12 col-md-12 col-12 text-center text-xl-start">
-            <p class="quote mb-4"> "No free man shall ever be debarred the use of arms." </p>
-            <a href="#" class="cta-hero">Join The Fight</a>
+
+      <div class="d-none d-md-block desktop-nav">
+        <div class="row align-items-center">
+          <div class="col-md-3">
+            <a href="#" class="cta">donate</a>
           </div>
-          <div class="col-xxl-7 col-xl-7 col-lg-12 col-md-12 col-12">
-            <img src="/assets/images/test.png" class="w-100" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="donations">
-      <div class="container">
-        <div class="row gx-5">
-          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-12">
-            <div class="support-org">
-              <div class="text-center mb-4">
-                <a href="https://www.defdist.org" target="_blank">
-                  <img src="./assets/images/logo-defense-distributed.png" class="logo" />
-                </a>
-              </div>
-              <div class="text-center mb-2">
-                <a href="https://www.defdist.org" class="name">Defense Distributed</a>
-              </div>
-              <p class="description mb-4 mb-lg-2"> Defense Distributed has been the primary litigator in support of your right to make arms for over a decade. Donate directly to Defense Distributed to support the California litigation. </p>
-              <div class="text-center">
-                <button class="donate" data-bs-toggle="modal" data-bs-target="#modal-dd"> Donate to DD </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-12">
-            <div class="support-org">
-              <div class="text-center mb-4">
-                <a href="https://www.ddlegio.com" target="_blank">
-                  <img src="./assets/images/logo-legio.png" class="logo" />
-                </a>
-              </div>
-              <div class="text-center mb-2">
-                <a href="https://www.ddlegio.com" class="name">LEGIO</a>
-              </div>
-              <p class="description mb-4 mb-lg-2"> LEGIO is Defense Distributed's technical and legal support fraternity. Legionnaires do more than “protect” the Second Amendment. They fund its direct, material expansion. </p>
-              <div class="text-center">
-                <a href="https://thegunspringurl.com/?org=legio&amount=60" target="_blank" class="donate">Join LEGIO</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-12">
-            <div class="support-org">
-              <div class="text-center mb-4">
-                <a href="https://www.saf.org" target="_blank">
-                  <img src="./assets/images/logo-saf.png" class="logo" />
-                </a>
-              </div>
-              <div class="text-center mb-2">
-                <a href="https://www.saf.org" class="name">Second Amendment Foundation</a>
-              </div>
-              <p class="description mb-4 mb-lg-2"> The Second Amendment Foundation (SAF) is dedicated to promoting a better understanding about our Constitutional heritage to privately own and possess firearms. </p>
-              <div class="text-center">
-                <a href="https://www.saf.org/donation-page/" target="_blank" class="donate">Donate to SAF</a>
-              </div>
-            </div>
+          <div class="col-md-9 text-end">
+            <a href="#" class="nav-item"><i class="fa-solid fa-circle-info"></i> About</a>
+            <a href="#" class="nav-item"><i class="fa-solid fa-file-lines"></i> Read the Complaint</a>
+            <a href="#" class="nav-item"><i class="fa-solid fa-brush"></i> Tar and Feather</a>
           </div>
         </div>
       </div>
     </div>
-    <div class="info">
+
+
+  </div>
+  <div id="hero">
+    <div class="container-xl px-4 px-xl-0">
+      <div class="row">
+        <div class="col-xxl-5 col-xl-5 col-lg-12 col-md-12 col-12 text-center text-xl-start">
+          <a href="https://jefferson3volumes.org/?q=content/thomas-jefferson-jean-baptiste-ternant-15-may-1793"
+            target="_blank" class="quote mb-4">"Our citizens have always been free to make, vend, and export arms"</a>
+          <p class="description mt-1">California banned your right to make arms.<br>And your right to fight back.</p>
+          <div>
+            <a href="#" class="cta-hero mt-2">Stop California</a>
+          </div>
+        </div>
+        <div class="col-xxl-7 col-xl-7 col-lg-12 col-md-12 col-12 col-hero-img">
+          <img src="/assets/images/test.png" class="w-100" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="donations">
+    <div class="container">
+      <div class="row gx-5">
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-12">
+          <div class="support-org">
+            <div class="text-center mb-4">
+              <a href="https://ghostguns.com" target="_blank">
+                <img src="./assets/images/logo-ghost-guns.png" class="logo" />
+              </a>
+            </div>
+            <div class="text-center mb-2">
+              <a href="https://ghostguns.com" class="name">Ghost Guns</a>
+            </div>
+            <p class="description mb-4 mb-lg-2"> Defense Distributed has been the primary litigator in support of your
+              right to make arms for over a decade. Donate directly to Defense Distributed to support the California
+              litigation. </p>
+            <div class="text-center">
+              <a href="https://ghostguns.com" target="_blank" class="donate">Shop at Ghost Guns</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-12">
+          <div class="support-org">
+            <div class="text-center mb-4">
+              <a href="https://www.ddlegio.com" target="_blank">
+                <img src="./assets/images/logo-dd-legio.png" class="logo" />
+              </a>
+            </div>
+            <div class="text-center mb-2">
+              <a href="https://www.ddlegio.com" class="name">LEGIO</a>
+            </div>
+            <p class="description mb-4 mb-lg-2"> LEGIO is Defense Distributed's technical and legal support fraternity.
+              Legionnaires do more than “protect” the Second Amendment. They fund its direct, material expansion. </p>
+            <div class="text-center">
+              <a href="https://thegunspringurl.com/?org=legio&amount=60" target="_blank" class="donate">Join LEGIO</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-12">
+          <div class="support-org">
+            <div class="text-center mb-4">
+              <a href="https://www.saf.org" target="_blank">
+                <img src="./assets/images/logo-saf.png" class="logo" />
+              </a>
+            </div>
+            <div class="text-center mb-2">
+              <a href="https://www.saf.org" class="name">Second Amendment Foundation</a>
+            </div>
+            <p class="description mb-4 mb-lg-2"> The Second Amendment Foundation (SAF) is dedicated to promoting a
+              better understanding about our Constitutional heritage to privately own and possess firearms. </p>
+            <div class="text-center">
+              <a href="https://www.saf.org/donation-page/" target="_blank" class="donate">Donate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="info">
+    <div class="container">
       <div class="row justify-content-center">
         <div class="content">
           <span class="fa-stack fa-2x mb-3">
@@ -110,16 +137,28 @@
             <i class="fa-stack-1x fa-inverse">1</i>
           </span>
           <p class="title">Warheads hulk hogan beepers</p>
-          <p class="description"> Fly jonathan taylor thomas macaulay culkin steve urkel tupac shakur. World wide web rollerblades snoop dogg david duchovny magic johnson backstreet boys. Aerosmith trippin’ sublime bop it. Frosted tips fila you’ve got mail independence day royal stewart tartan, flannel shirts madonna grunge troll dolls. <br />
-            <br /> Valley girl macaulay culkin coral chillin’ rush hour cory matthews. Warheads hulk hogan beepers jagged little pill julia roberts keanu reeves.
+          <p class="description"> Fly jonathan taylor thomas macaulay culkin steve urkel tupac shakur. World wide web
+            rollerblades snoop dogg david duchovny magic johnson backstreet boys. Aerosmith trippin’ sublime bop it.
+            Frosted tips fila you’ve got mail independence day royal stewart tartan, flannel shirts madonna grunge troll
+            dolls. <br />
+            <br /> Valley girl macaulay culkin coral chillin’ rush hour cory matthews. Warheads hulk hogan beepers
+            jagged
+            little pill julia roberts keanu reeves.
           </p>
           <div class="d-flex align-items-top topic-container">
             <i class="plus-minus fa-solid fa-circle-plus fa-2x me-4" data-bs-toggle="collapse" href="#topic-1"></i>
             <div>
-              <a class="topic" data-bs-toggle="collapse" href="#topic-1" role="button" aria-expanded="false" aria-controls="topic-1"> changing your atv carbeurator </a>
+              <a class="topic" data-bs-toggle="collapse" href="#topic-1" role="button" aria-expanded="false"
+                aria-controls="topic-1"> changing your atv carbeurator </a>
               <div class="collapse" id="topic-1">
-                <p class="explanation mt-4 mb-4"> The decade that brought us Star Trek and Doctor Who also resurrected Cicero—or at least what used to be Cicero—in an attempt to make the days before computerized design a little less painstaking. <br />
-                  <br /> The French lettering company Letraset manufactured a set of dry-transfer sheets which included the lorem ipsum filler text in a variety of fonts, sizes, and layouts. These sheets of lettering could be rubbed on anywhere and were quickly adopted by graphic artists, printers, architects, and advertisers for their professional look and ease of use.
+                <p class="explanation mt-4 mb-4"> The decade that brought us Star Trek and Doctor Who also resurrected
+                  Cicero—or at least what used to be Cicero—in an attempt to make the days before computerized design a
+                  little less painstaking. <br />
+                  <br /> The French lettering company Letraset manufactured a set of dry-transfer sheets which included
+                  the lorem ipsum filler text in a variety of fonts, sizes, and layouts. These sheets of lettering could
+                  be rubbed on anywhere and were quickly adopted by graphic artists, printers, architects, and
+                  advertisers
+                  for their professional look and ease of use.
                 </p>
               </div>
             </div>
@@ -127,10 +166,17 @@
           <div class="d-flex align-items-top topic-container">
             <i class="plus-minus fa-solid fa-circle-plus fa-2x pt-1 me-4" data-bs-toggle="collapse" href="#topic-2"></i>
             <div>
-              <a class="topic" data-bs-toggle="collapse" href="#topic-2" role="button" aria-expanded="false" aria-controls="topic-2"> toasting the bread with butter </a>
+              <a class="topic" data-bs-toggle="collapse" href="#topic-2" role="button" aria-expanded="false"
+                aria-controls="topic-2"> toasting the bread with butter </a>
               <div class="collapse" id="topic-2">
-                <p class="explanation mt-4 mb-4"> The decade that brought us Star Trek and Doctor Who also resurrected Cicero—or at least what used to be Cicero—in an attempt to make the days before computerized design a little less painstaking. <br />
-                  <br /> The French lettering company Letraset manufactured a set of dry-transfer sheets which included the lorem ipsum filler text in a variety of fonts, sizes, and layouts. These sheets of lettering could be rubbed on anywhere and were quickly adopted by graphic artists, printers, architects, and advertisers for their professional look and ease of use.
+                <p class="explanation mt-4 mb-4"> The decade that brought us Star Trek and Doctor Who also resurrected
+                  Cicero—or at least what used to be Cicero—in an attempt to make the days before computerized design a
+                  little less painstaking. <br />
+                  <br /> The French lettering company Letraset manufactured a set of dry-transfer sheets which included
+                  the lorem ipsum filler text in a variety of fonts, sizes, and layouts. These sheets of lettering could
+                  be rubbed on anywhere and were quickly adopted by graphic artists, printers, architects, and
+                  advertisers
+                  for their professional look and ease of use.
                 </p>
               </div>
             </div>
@@ -138,10 +184,17 @@
           <div class="d-flex align-items-top">
             <i class="plus-minus fa-solid fa-circle-plus fa-2x pt-1 me-4" data-bs-toggle="collapse" href="#topic-3"></i>
             <div>
-              <a class="topic" data-bs-toggle="collapse" href="#topic-3" role="button" aria-expanded="false" aria-controls="topic-3"> PLANT MORE CILANTRO FOR FLAVOR </a>
+              <a class="topic" data-bs-toggle="collapse" href="#topic-3" role="button" aria-expanded="false"
+                aria-controls="topic-3"> PLANT MORE CILANTRO FOR FLAVOR </a>
               <div class="collapse" id="topic-3">
-                <p class="explanation mt-4 mb-4"> The decade that brought us Star Trek and Doctor Who also resurrected Cicero—or at least what used to be Cicero—in an attempt to make the days before computerized design a little less painstaking. <br />
-                  <br /> The French lettering company Letraset manufactured a set of dry-transfer sheets which included the lorem ipsum filler text in a variety of fonts, sizes, and layouts. These sheets of lettering could be rubbed on anywhere and were quickly adopted by graphic artists, printers, architects, and advertisers for their professional look and ease of use.
+                <p class="explanation mt-4 mb-4"> The decade that brought us Star Trek and Doctor Who also resurrected
+                  Cicero—or at least what used to be Cicero—in an attempt to make the days before computerized design a
+                  little less painstaking. <br />
+                  <br /> The French lettering company Letraset manufactured a set of dry-transfer sheets which included
+                  the lorem ipsum filler text in a variety of fonts, sizes, and layouts. These sheets of lettering could
+                  be rubbed on anywhere and were quickly adopted by graphic artists, printers, architects, and
+                  advertisers
+                  for their professional look and ease of use.
                 </p>
               </div>
             </div>
@@ -149,34 +202,41 @@
         </div>
       </div>
     </div>
-    <div id="newsletter">
-      <div class="container text-center">
-        <p class="title mb-0">join the fight</p>
-        <p class="description mt-2"> Sign up to recieve a monthly newsletter </p>
+  </div>
+  <div id="newsletter">
+    <div class="container text-center">
+      <p class="title mb-0">join the fight</p>
+      <p class="description mt-2"> Sign up to recieve a monthly newsletter </p>
 
-        <div class="row gx-2 justify-content-center">
-          <div class="col-12 col-md-7 col-lg-6 col-xl-5 col-xxl-4">
-            <div id="mc_embed_signup_scroll">
-              <form action="https://ghostgunner.us17.list-manage.com/subscribe/post?u=e204d9ef7718991df1c974644&amp;id=4253170ab8&amp;f_id=00b3f6e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <div class="form-floating text-start">
-                  <input type="email" class="form-control form-control-lg mb-2" id="mce-EMAIL" name="EMAIL" placeholder="Email address" />
-                  <div id="mailchimp-message"> 
+      <div class="row gx-2 justify-content-center">
+        <div class="col-12 col-md-7 col-lg-6 col-xl-5 col-xxl-4">
+          <div id="mc_embed_signup_scroll">
+            <form
+              action="https://ghostgunner.us17.list-manage.com/subscribe/post?u=e204d9ef7718991df1c974644&amp;id=4253170ab8&amp;f_id=00b3f6e1f0"
+              method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+              target="_blank" novalidate>
+              <div class="form-floating text-start">
+                <input type="email" class="form-control form-control-lg mb-2" id="mce-EMAIL" name="EMAIL"
+                  placeholder="Email address" />
+                <div id="mailchimp-message">
                   <small></small>
-                  </div>
-                  <label for="email-address">Email address</label>
                 </div>
-                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e204d9ef7718991df1c974644_4253170ab8" tabindex="-1" value=""></div>
-              </form>
-            </div>
-          </div>
-          <div class="col-12 col-md-auto">
-            <button id="subscribe" class="cta-donate mt-2 mt-md-0">Join</button>
+                <label for="email-address">Email address</label>
+              </div>
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                  name="b_e204d9ef7718991df1c974644_4253170ab8" tabindex="-1" value=""></div>
+            </form>
           </div>
         </div>
-
+        <div class="col-12 col-md-auto">
+          <button id="subscribe" class="cta-donate mt-2 mt-md-0">Join</button>
+        </div>
       </div>
+
     </div>
-    <div class="info">
+  </div>
+  <div class="info">
+    <div class="container">
       <div class="row justify-content-center">
         <div class="content">
           <span class="fa-stack fa-2x mb-3">
@@ -184,16 +244,28 @@
             <i class="fa-stack-1x fa-inverse">2</i>
           </span>
           <p class="title">Buying old Super Nintendos</p>
-          <p class="description"> Fly jonathan taylor thomas macaulay culkin steve urkel tupac shakur. World wide web rollerblades snoop dogg david duchovny magic johnson backstreet boys. Aerosmith trippin’ sublime bop it. Frosted tips fila you’ve got mail independence day royal stewart tartan, flannel shirts madonna grunge troll dolls. <br />
-            <br /> Valley girl macaulay culkin coral chillin’ rush hour cory matthews. Warheads hulk hogan beepers jagged little pill julia roberts keanu reeves.
+          <p class="description"> Fly jonathan taylor thomas macaulay culkin steve urkel tupac shakur. World wide web
+            rollerblades snoop dogg david duchovny magic johnson backstreet boys. Aerosmith trippin’ sublime bop it.
+            Frosted tips fila you’ve got mail independence day royal stewart tartan, flannel shirts madonna grunge troll
+            dolls. <br />
+            <br /> Valley girl macaulay culkin coral chillin’ rush hour cory matthews. Warheads hulk hogan beepers
+            jagged
+            little pill julia roberts keanu reeves.
           </p>
           <div class="d-flex align-items-top topic-container">
             <i class="plus-minus fa-solid fa-circle-plus fa-2x me-4" data-bs-toggle="collapse" href="#topic-4"></i>
             <div>
-              <a class="topic" data-bs-toggle="collapse" href="#topic-4" role="button" aria-expanded="false" aria-controls="topic-4"> modern gaming is ps1 era with more polygons </a>
+              <a class="topic" data-bs-toggle="collapse" href="#topic-4" role="button" aria-expanded="false"
+                aria-controls="topic-4"> modern gaming is ps1 era with more polygons </a>
               <div class="collapse" id="topic-4">
-                <p class="explanation mt-4 mb-4"> The decade that brought us Star Trek and Doctor Who also resurrected Cicero—or at least what used to be Cicero—in an attempt to make the days before computerized design a little less painstaking. <br />
-                  <br /> The French lettering company Letraset manufactured a set of dry-transfer sheets which included the lorem ipsum filler text in a variety of fonts, sizes, and layouts. These sheets of lettering could be rubbed on anywhere and were quickly adopted by graphic artists, printers, architects, and advertisers for their professional look and ease of use.
+                <p class="explanation mt-4 mb-4"> The decade that brought us Star Trek and Doctor Who also resurrected
+                  Cicero—or at least what used to be Cicero—in an attempt to make the days before computerized design a
+                  little less painstaking. <br />
+                  <br /> The French lettering company Letraset manufactured a set of dry-transfer sheets which included
+                  the lorem ipsum filler text in a variety of fonts, sizes, and layouts. These sheets of lettering could
+                  be rubbed on anywhere and were quickly adopted by graphic artists, printers, architects, and
+                  advertisers
+                  for their professional look and ease of use.
                 </p>
               </div>
             </div>
@@ -201,10 +273,17 @@
           <div class="d-flex align-items-top">
             <i class="plus-minus fa-solid fa-circle-plus fa-2x pt-1 me-4" data-bs-toggle="collapse" href="#topic-5"></i>
             <div>
-              <a class="topic" data-bs-toggle="collapse" href="#topic-5" role="button" aria-expanded="false" aria-controls="topic-5"> arcade redemption games are regressing </a>
+              <a class="topic" data-bs-toggle="collapse" href="#topic-5" role="button" aria-expanded="false"
+                aria-controls="topic-5"> arcade redemption games are regressing </a>
               <div class="collapse" id="topic-5">
-                <p class="explanation mt-4 mb-4"> The decade that brought us Star Trek and Doctor Who also resurrected Cicero—or at least what used to be Cicero—in an attempt to make the days before computerized design a little less painstaking. <br />
-                  <br /> The French lettering company Letraset manufactured a set of dry-transfer sheets which included the lorem ipsum filler text in a variety of fonts, sizes, and layouts. These sheets of lettering could be rubbed on anywhere and were quickly adopted by graphic artists, printers, architects, and advertisers for their professional look and ease of use.
+                <p class="explanation mt-4 mb-4"> The decade that brought us Star Trek and Doctor Who also resurrected
+                  Cicero—or at least what used to be Cicero—in an attempt to make the days before computerized design a
+                  little less painstaking. <br />
+                  <br /> The French lettering company Letraset manufactured a set of dry-transfer sheets which included
+                  the lorem ipsum filler text in a variety of fonts, sizes, and layouts. These sheets of lettering could
+                  be rubbed on anywhere and were quickly adopted by graphic artists, printers, architects, and
+                  advertisers
+                  for their professional look and ease of use.
                 </p>
               </div>
             </div>
@@ -212,76 +291,81 @@
         </div>
       </div>
     </div>
-    <div id="footer">
-      <div class="container-fluid px-4">
-        <div class="row justify-content-between">
-          <div class="col-12 col-md-5 order-last order-md-first">
-            <p class="campaign-title">The name <br>of this <br>campaign </p>
+  </div>
+  <div id="footer">
+    <div class="container-fluid px-4">
+      <div class="row justify-content-between">
+        <div class="col-12 col-md-5 order-last order-md-first">
+          <p class="campaign-title">Defense Distributed v. California</p>
+        </div>
+        <div class="col-12 col-md-4 text-start text-md-end order-first">
+          <p class="title mb-0">Follow</p>
+          <div>
+            <a href="https://twitter.com/defdist" target="_blank">
+              <i class="fa-brands fa-twitter fa-2x me-3"></i>
+            </a>
+            <a href="https://www.youtube.com/user/DXLiberty" target="_blank">
+              <i class="fa-brands fa-youtube fa-2x"></i>
+            </a>
           </div>
-          <div class="col-12 col-md-4 text-start text-md-end order-first">
-            <p class="title mb-0">Follow</p>
-            <div>
-              <a href="https://twitter.com/defdist" target="_blank">
-                <i class="fa-brands fa-twitter fa-2x me-3"></i>
-              </a>
-              <a href="https://www.youtube.com/user/DXLiberty" target="_blank">
-                <i class="fa-brands fa-youtube fa-2x"></i>
-              </a>
-            </div>
-            <p class="title mt-4 mb-0">Contact</p>
-            <a href="mailto:operations@defdist.org" class="email-link">operations@defdist.org</a>
-          </div>
+          <p class="title mt-4 mb-0">Contact</p>
+          <a href="mailto:operations@defdist.org" class="email-link">operations@defdist.org</a>
         </div>
       </div>
     </div>
-    <!-- DD Modal -->
-    <div class="modal fade" data-bs-backdrop="static" id="modal-dd" tabindex="-1" aria-labelledby="modal-dd" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modal-success"> Donate to Defense Distributed
-            </h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p>Lion king toni braxton valley girl pizza bagels dj jazzy jeff be kind rewind, cargo pants enrique iglesias cutoff jeans sideburns sitcoms.</p>
-            <div class="row gx-2">
-              <div class="col-6 col-md-3">
-                <button class="payment-amount mb-2 mb-md-2" data-amount="2900">$2,900</button>
-              </div>
-              <div class="col-6 col-md-3">
-                <button class="payment-amount mb-2 mb-md-2" data-amount="2000">$2,000</button>
-              </div>
-              <div class="col-6 col-md-3">
-                <button class="payment-amount mb-2 mb-md-2" data-amount="1500">$1,500</button>
-              </div>
-              <div class="col-6 col-md-3">
-                <button class="payment-amount mb-2 mb-md-2" data-amount="1000">$1,000</button>
-              </div>
-              <div class="col-6 col-md-3 mb-2 mb-md-0">
-                <button class="payment-amount" data-amount="500">$500</button>
-              </div>
-              <div class="col-6 col-md-3 mb-2 mb-md-0">
-                <button class="payment-amount" data-amount="250">$250</button>
-              </div>
-              <div class="col-6 col-md-3 mb-md-0">
-                <button class="payment-amount" data-amount="100">$100</button>
-              </div>
-              <div class="col-6 col-md-3 mb-md-0">
-                <div class="input-group mb-3">
-                  <span class="input-group-text">$</span>
-                  <div class="form-floating">
-                    <input type="text" class="form-control" id="other" placeholder="Other">
-                    <label for="other">Other</label>
-                  </div>
+  </div>
+  <!-- DD Modal -->
+  <div class="modal fade" data-bs-backdrop="static" id="modal-dd" tabindex="-1" aria-labelledby="modal-dd"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-success"> Donate to Defense Distributed
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Lion king toni braxton valley girl pizza bagels dj jazzy jeff be kind rewind, cargo pants enrique iglesias
+            cutoff jeans sideburns sitcoms.</p>
+          <div class="row gx-2">
+            <div class="col-6 col-md-3">
+              <button class="payment-amount mb-2 mb-md-2" data-amount="2900">$2,900</button>
+            </div>
+            <div class="col-6 col-md-3">
+              <button class="payment-amount mb-2 mb-md-2" data-amount="2000">$2,000</button>
+            </div>
+            <div class="col-6 col-md-3">
+              <button class="payment-amount mb-2 mb-md-2" data-amount="1500">$1,500</button>
+            </div>
+            <div class="col-6 col-md-3">
+              <button class="payment-amount mb-2 mb-md-2" data-amount="1000">$1,000</button>
+            </div>
+            <div class="col-6 col-md-3 mb-2 mb-md-0">
+              <button class="payment-amount" data-amount="500">$500</button>
+            </div>
+            <div class="col-6 col-md-3 mb-2 mb-md-0">
+              <button class="payment-amount" data-amount="250">$250</button>
+            </div>
+            <div class="col-6 col-md-3 mb-md-0">
+              <button class="payment-amount" data-amount="100">$100</button>
+            </div>
+            <div class="col-6 col-md-3 mb-md-0">
+              <div class="input-group mb-3">
+                <span class="input-group-text">$</span>
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="other" placeholder="Other">
+                  <label for="other">Other</label>
                 </div>
               </div>
             </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn-continue">  <i id="loading" class="fa-solid fa-cog fa-spin me-2 d-none"></i><span id="continue-text">Continue</span></button>
-          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-continue"> <i id="loading"
+              class="fa-solid fa-cog fa-spin me-2 d-none"></i><span id="continue-text">Continue</span></button>
         </div>
       </div>
-  </body>
+    </div>
+</body>
+
 </html>

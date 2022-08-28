@@ -9,13 +9,39 @@ p {
 }
 
 #header {
-  display: none;
+  position: fixed;
+  z-index: 2;
+  top: 0;
   width: 100%;
   padding: 15px 0;
-  background: rgba(0, 0, 0, 0.1);
+  background: #999;
 }
 #header .container-fluid {
   padding: 0 50px !important;
+}
+#header .desktop-nav .cta {
+  padding: 10px 20px;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  border: 0;
+  border-radius: 5px;
+  background: #d32f2f;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: capitalize;
+}
+#header .desktop-nav .cta:hover {
+  color: white;
+  background: #c62828;
+}
+#header .desktop-nav .nav-item {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+#header .desktop-nav .row div:nth-child(2) .nav-item:nth-child(-n+2) {
+  margin-right: 50px;
 }
 
 .cta-donate {
@@ -57,12 +83,25 @@ p {
 
 #hero {
   padding: 50px 0 0 0;
+  margin-top: 78px;
+}
+#hero .col-hero-img {
+  padding-top: 25px;
 }
 
 .quote {
-  font-size: 40px;
+  font-size: 2rem;
   font-weight: bold;
   line-height: 1.25;
+  text-decoration: none;
+  color: black;
+}
+.quote:hover {
+  color: black;
+}
+
+.description {
+  font-size: 1.25rem;
 }
 
 .cta-hero {
@@ -157,10 +196,6 @@ p {
 
 #subscribe {
   padding: 14px 20px !important;
-  background: #222 !important;
-}
-#subscribe:hover {
-  background: #000 !important;
 }
 
 .payment-amount {
@@ -185,6 +220,10 @@ p {
 #newsletter {
   padding: 100px 0;
   background-color: #d32f2f;
+  background-image: url("/assets/images/artwork-4.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top right;
 }
 #newsletter #mce-EMAIL {
   width: 100%;
@@ -192,12 +231,13 @@ p {
 #newsletter small {
   font-size: 1rem !important;
   color: white;
+  text-shadow: 1px 1px black;
 }
 #newsletter .fa-circle-check {
   color: #43a047;
 }
 #newsletter .fa-circle-exclamation {
-  color: #f44336;
+  color: #ff8a80;
 }
 #newsletter .container .title {
   font-size: 6rem;
@@ -205,6 +245,7 @@ p {
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1;
+  text-shadow: 1px 1px black;
 }
 #newsletter .container .description {
   font-size: 2rem;
@@ -213,6 +254,7 @@ p {
   text-transform: uppercase;
   margin-bottom: 25px;
   line-height: 1;
+  text-shadow: 1px 1px black;
 }
 #newsletter input {
   border: 0;
@@ -222,6 +264,10 @@ p {
 
 .info {
   padding: 75px 0;
+}
+.info .fa-inverse {
+  font-weight: bold;
+  font-style: initial;
 }
 .info .fa-circle {
   color: black;
@@ -335,9 +381,16 @@ p {
 @media (max-width: 767.98px) {
   #hero {
     padding: 35px 0 0 0;
+    margin-top: 45px;
   }
-  .quote {
-    font-size: 1.8rem;
+  #hero .quote {
+    font-size: 1.5rem;
+  }
+  #hero .description {
+    font-size: 1rem;
+  }
+  #hero .col-hero-img {
+    padding-top: 0;
   }
   .cta-hero {
     padding: 10px 20px;
@@ -355,8 +408,32 @@ p {
   #donations .support-org .donate {
     width: 100%;
   }
+  #header {
+    padding: 10px 0;
+  }
+  #header .mobile-nav .cta {
+    padding: 5px;
+    color: white;
+    font-size: 0.75rem;
+    text-align: center;
+    border: 0;
+    border-radius: 5px;
+    background: #d32f2f;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: capitalize;
+  }
+  #header .mobile-nav .cta:hover {
+    color: white;
+    background: #c62828;
+  }
+  #header .mobile-nav .nav-item {
+    color: white;
+    text-decoration: none;
+    font-size: 0.75rem;
+  }
   #header .container-fluid {
-    padding: 0 25px !important;
+    padding: 0 5px !important;
   }
   #newsletter {
     padding: 75px 0;
@@ -371,7 +448,7 @@ p {
     width: 100%;
   }
   #footer .campaign-title {
-    font-size: 3.5rem;
+    font-size: 2.2rem;
     margin-top: 35px;
   }
 }/*# sourceMappingURL=style.css.map */
