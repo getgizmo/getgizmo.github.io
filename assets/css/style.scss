@@ -228,12 +228,20 @@ p {
 }
 
 #newsletter {
-  padding: 100px 0;
   background-color: #d32f2f;
-  background-image: url("/assets/images/artwork-4.jpg");
+  background-image: url("/assets/images/flag.png");
   background-attachment: fixed;
   background-size: cover;
   background-position: top right;
+
+  .content {
+    padding: 100px 0;
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    top: 0;
+  }
 
   #mce-EMAIL {
     width: 100%;
@@ -491,7 +499,9 @@ p {
   }
 
   #newsletter {
-    padding: 75px 0;
+    .content {
+      padding: 75px 0;
+    }
 
     .container {
       .title {
