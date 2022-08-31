@@ -471,29 +471,32 @@ p {
 
   #header {
     padding: 10px 0;
-    .mobile-nav {
-      .cta {
-        padding: 5px;
-        color: white;
-        font-size: 0.75rem;
-        text-align: center;
-        border: 0;
-        border-radius: 5px;
-        background: #d32f2f;
-        text-decoration: none;
-        display: inline-block;
-        text-transform: capitalize;
 
-        &:hover {
-          color: white;
-          background: #c62828;
-        }
-      }
-      .nav-item {
+    .row div:nth-child(2) .nav-item:nth-child(-n + 1) {
+      margin-right: 25px;
+    }
+
+    .cta {
+      padding: 5px;
+      color: white;
+      font-size: 0.75rem;
+      text-align: center;
+      border: 0;
+      border-radius: 5px;
+      background: #d32f2f;
+      text-decoration: none;
+      display: inline-block;
+      text-transform: capitalize;
+
+      &:hover {
         color: white;
-        text-decoration: none;
-        font-size: 0.75rem;
+        background: #c62828;
       }
+    }
+    .nav-item {
+      color: white;
+      text-decoration: none;
+      font-size: 0.75rem;
     }
     .container-fluid {
       padding: 0 25px !important;

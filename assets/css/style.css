@@ -421,7 +421,10 @@ p {
   #header {
     padding: 10px 0;
   }
-  #header .mobile-nav .cta {
+  #header .row div:nth-child(2) .nav-item:nth-child(-n+1) {
+    margin-right: 25px;
+  }
+  #header .cta {
     padding: 5px;
     color: white;
     font-size: 0.75rem;
@@ -433,11 +436,11 @@ p {
     display: inline-block;
     text-transform: capitalize;
   }
-  #header .mobile-nav .cta:hover {
+  #header .cta:hover {
     color: white;
     background: #c62828;
   }
-  #header .mobile-nav .nav-item {
+  #header .nav-item {
     color: white;
     text-decoration: none;
     font-size: 0.75rem;
