@@ -19,7 +19,7 @@ p {
 #header .container-fluid {
   padding: 0 50px !important;
 }
-#header .desktop-nav .cta {
+#header .cta {
   padding: 10px 20px;
   color: white;
   font-size: 1rem;
@@ -31,16 +31,16 @@ p {
   display: inline-block;
   text-transform: capitalize;
 }
-#header .desktop-nav .cta:hover {
+#header .cta:hover {
   color: white;
   background: #c62828;
 }
-#header .desktop-nav .nav-item {
+#header .nav-item {
   color: white;
   text-decoration: none;
   font-size: 1rem;
 }
-#header .desktop-nav .row div:nth-child(2) .nav-item:nth-child(-n+2) {
+#header .row div:nth-child(2) .nav-item:nth-child(-n+1) {
   margin-right: 50px;
 }
 
@@ -291,6 +291,9 @@ p {
 .info .content {
   width: 550px;
 }
+.info .section-1 {
+  margin-bottom: 100px;
+}
 .info .plus-minus {
   cursor: pointer;
 }
@@ -440,7 +443,7 @@ p {
     font-size: 0.75rem;
   }
   #header .container-fluid {
-    padding: 0 5px !important;
+    padding: 0 25px !important;
   }
   #newsletter .content {
     padding: 75px 0;
