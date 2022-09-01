@@ -1,50 +1,12 @@
 $(function () {
 
-  let continueButtonDisabled = false;
-  let selectedAmount;
+  $("#nav-about").click(function () {
 
-  $(".plus-minus").click(function () {
-    $(this).toggleClass("fa-circle-plus fa-circle-minus");
+    $([document.documentElement, document.body]).animate({
+      scrollTop: $("#about").offset().top - $("#header").outerHeight()
+    }, "fast");
   });
 
-  $(".topic").click(function () {
-    $(this).parent().parent().find(".plus-minus").toggleClass("fa-circle-plus fa-circle-minus");
-  });
-
-  $(".payment-amount").click(function () {
-    $("#other").val("");
-    $(".payment-amount").removeClass("payment-amount-active");
-    $(this).addClass("payment-amount-active");
-    selectedAmount = $(this).data("amount");
-  });
-
-  $("#other").on("input", function () {
-    $(".payment-amount").removeClass("payment-amount-active");
-    this.value = this.value.replace(/\D/g, '');
-    this.value ? selectedAmount = this.value : selectedAmount = 0;
-  });
-
-  $(".btn-continue").click(function () {
-    if (selectedAmount && !continueButtonDisabled) {
-      $(this).css("background-color", "#666");
-      $(this).css({ pointerEvents: "none" });
-      $("#continue-text").text("Continuing");
-      $("#loading").removeClass("d-none");
-      continueButtonDisabled = true;
-      setTimeout(() => {
-        window.open("https://thegunspringurl.com/?org=dd&amount=" + selectedAmount, "_blank");
-        $(".btn-close").click();
-        $(".payment-amount").removeClass("payment-amount-active");
-        $("#other").val("");
-        selectedAmount = 0;
-        continueButtonDisabled = false;
-        $("#continue-text").text("Continue");
-        $(this).css("background-color", "#d32f2f");
-        $(this).css({ pointerEvents: "auto" });
-        $("#loading").addClass("d-none");
-      }, 2000)
-    }
-  });
 
   $("#subscribe").click(function () {
     if ($("#mce-EMAIL").val().trim()) {
@@ -67,7 +29,5 @@ $(function () {
       });
     }
   });
-
-
 
 });
