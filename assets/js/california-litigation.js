@@ -1,5 +1,11 @@
 $(function () {
 
+  $("#cta-donate").click(function () {
+    $([document.documentElement, document.body]).animate({
+      scrollTop: $("#donations").offset().top - $("#header").outerHeight()
+    }, "fast");
+  });
+
   $("#nav-about").click(function () {
     $([document.documentElement, document.body]).animate({
       scrollTop: $("#about").offset().top - $("#header").outerHeight()
