@@ -1,12 +1,10 @@
 $(function () {
 
   $("#nav-about").click(function () {
-
     $([document.documentElement, document.body]).animate({
       scrollTop: $("#about").offset().top - $("#header").outerHeight()
     }, "fast");
   });
-
 
   $("#subscribe").click(function () {
     if ($("#mce-EMAIL").val().trim()) {
